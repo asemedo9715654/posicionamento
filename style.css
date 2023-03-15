@@ -2,30 +2,37 @@
 
 .item{
   width: 200px;
-  height: 40px;
+  height: 80px;
   background-color: yellow;
   color: black;
+  text-align: center;
+  /* margin: auto; */
+  margin: 2px;
 }
 
 .item-1{
   /* absolute tira o elemento do seu workflow */
   position: absolute; 
-  /* top:0px; */
   bottom: 300px;
   right: 200px;
+
   background-color: red;
+  width: 500px;
+  height: 500px;
+  color: white;
+  border-radius: 50%;
 }
 
 
 .item-3{
-  /* estatico nao possui acesso ao top e right */
-  position: absolute; 
+  /* estatico não possui acesso ao top e right */
+  position: static; 
  
 }
 
 
 .item-2{
-  /* nao tira o elemento do seu workflwo */
+  /* não tira o elemento do seu workflow */
   position: relative; 
   left: 120px;
   background-color: green;
@@ -33,13 +40,13 @@
 }
 
 
-.item-4{
-  /* elemmento fica fixo em relacao ao html */
+/* rodape */
+.item-4{ 
+  /* elemmento fica fixo em relação ao html */
   position: fixed; 
-  /* top: 0px; */
   bottom: 0px;
   left: 0px;
   z-index: 1;
   width: 100%;
- 
+  background-color: #fa0096;
 }
