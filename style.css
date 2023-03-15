@@ -1,0 +1,45 @@
+
+
+.item{
+  width: 200px;
+  height: 40px;
+  background-color: yellow;
+  color: black;
+}
+
+.item-1{
+  /* absolute tira o elemento do seu workflow */
+  position: absolute; 
+  /* top:0px; */
+  bottom: 300px;
+  right: 200px;
+  background-color: red;
+}
+
+
+.item-3{
+  /* estatico nao possui acesso ao top e right */
+  position: absolute; 
+ 
+}
+
+
+.item-2{
+  /* nao tira o elemento do seu workflwo */
+  position: relative; 
+  left: 120px;
+  background-color: green;
+ 
+}
+
+
+.item-4{
+  /* elemmento fica fixo em relacao ao html */
+  position: fixed; 
+  /* top: 0px; */
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+ 
+}
